@@ -51,7 +51,7 @@ abstract class GuzzleClient extends Client {
         }
         
         $default = array(
-            'base_url'  => '{scheme}://{domain}' . static::ENDPOINT,
+            'base_url'  => '{scheme}://{domain}/' . static::ENDPOINT,
             'class'     => 'FancyGuy\\Component\\GuzzleClient\\GuzzleClient',
         );
         
