@@ -1,6 +1,7 @@
 {
     "name": "fancyguy/guzzle-client",
     "description": "An abstract Guzzle 3 client to be extended by other FancyGuy Clients",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Steve Buzonas",
