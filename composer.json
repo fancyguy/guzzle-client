@@ -1,0 +1,16 @@
+{
+    "name": "fancyguy/guzzle-client",
+    "description": "An abstract Guzzle 3 client to be extended by other FancyGuy Clients",
+    "authors": [
+        {
+            "name": "Steve Buzonas",
+            "email": "steve@fancyguy.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "FancyGuy\\Component\\GuzzleClient": "src/" }
+    },
+    "require": {
+        "guzzle/guzzle": ">3.0"
+    }
+}
