@@ -61,11 +61,11 @@ abstract class GuzzleClient extends Client {
 
 		$refClass = new \ReflectionClass(get_called_class());
 
-		$serviceDefinitionPath = dirname(dirname($refClass->getFileName()));
+		$serviceDefinitionPath = dirname($refClass->getFileName());
 		$serviceDefinitionFile = array_pop(explode('\\', get_called_class())) . '.json';
 
 		switch (true) {
-			case is_readable($serviceDefinitionPath . DIRECTORY_SEPARATOR . 'Resources' . DIRECTORY_SEPARATOR . $serviceDefinitionFile):
+			case is_readable(dirname($serviceDefinitionPath) . DIRECTORY_SEPARATOR . 'Resources' . DIRECTORY_SEPARATOR . $serviceDefinitionFile):
 				$serviceDefinition = $serviceDefinitionPath . DIRECTORY_SEPARATOR . 'Resources' . DIRECTORY_SEPARATOR . $serviceDefinitionFile;
 				break;
 			case is_readable($serviceDefinitionPath . DIRECTORY_SEPARATOR . $serviceDefinitionFile):
