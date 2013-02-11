@@ -56,7 +56,7 @@ abstract class GuzzleClient extends Client {
 		$required = array_merge(array('scheme', 'domain', 'base_url'), $required);
 		$config = Collection::fromConfig($config, $default, $required);
 
-		$client = new self($config->get('base_url'), $config);
+		$client = new static($config->get('base_url'), $config);
 
 		$refClass = new \ReflectionClass(get_called_class());
 
