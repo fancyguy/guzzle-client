@@ -14,7 +14,12 @@
 		}
 	},
 	"require": {
-		"guzzle/guzzle": ">3.0"
+		"guzzle/guzzle": ">3.0",
+		"jms/serializer": "~0.11.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "dev-master",
+		"mockery/mockery": "dev-master"
 	},
 	"target-dir": "src/FancyGuy/Component/GuzzleClient"
 }
